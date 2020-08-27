@@ -20,17 +20,27 @@
     </ion-card-header>
   
     <ion-card-content>
+
       <ion-item>
-        <ion-label color="primary">Introduzca el monto a ser calculado = </ion-label>
+        <ion-label color="primary">Introduzca el monto = </ion-label>
+
         <ion-input [(ngModel)]="monto" type="number" step="0.01" value="0"></ion-input>
         <ion-label color="primary"> Bs.</ion-label>
       </ion-item>
       
 
-      <ion-button color="primary" (click)="verificarSimilitud()" expand="block" fill="outline">Lanzar</ion-button>
+      <ion-button color="primary" (click)="verificarSimilitud()" expand="block" fill="outline">Calcular</ion-button>
       <ion-label color="secundary">La utilidad es:</ion-label>
       <div  class="SalidaUtilidad">
-        {{ suma }}
+        {{ civa }}
+      </div>
+      <ion-label color="secundary">La utilidad es:</ion-label>
+      <div  class="SalidaUtilidad">
+        {{ cit }}
+      </div>
+      <ion-label color="secundary">La utilidad es:</ion-label>
+      <div  class="SalidaUtilidad">
+        {{ utilidad }}
       </div>
     </ion-card-content>
   </ion-card>
